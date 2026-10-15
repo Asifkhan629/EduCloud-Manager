@@ -1,0 +1,17 @@
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+Copy-Item .env.example .env
+
+
+
+python seed.py
+python app.py
+
+
+
+
+Role	Username	Password
+Admin	admin         	AdminDemo2026!
+Teacher	teacher1	TeachDemo2026!
+Student	student001	StudentDemo2026!
